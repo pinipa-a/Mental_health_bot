@@ -1,0 +1,50 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask how I can help
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: handle anxiety
+    steps:
+      - intent: feel_anxious
+      - action: action_anxiety_response
+
+  - story: journal entry
+    steps:
+      - intent: journal
+      - action: action_journal
+
+  - story: emergency help
+    steps:
+      - intent: emergency_help
+      - action: action_emergency_help
+
+  - story: gratitude response
+    steps:
+      - intent: express_gratitude
+      - action: utter_gratitude_response
+
+  - story: guided breathing exercise
+    steps:
+      - intent: mindfulness_exercise
+      - action: action_guided_breathing
+      - action: action_continue_breathing
+      - action: action_end_breathing
+
+  - story: self care tips
+    steps:
+      - intent: self_care_tips
+      - action: action_self_care_tips
+
+  - story: track mood
+    steps:
+      - intent: track_mood
+      - action: action_track_mood
+      - action: utter_thank_you_for_mood_tracking
+
+  - story: goodbye story
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

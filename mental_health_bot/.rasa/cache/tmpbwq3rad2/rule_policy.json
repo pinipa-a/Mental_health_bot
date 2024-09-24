@@ -1,0 +1,35 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"journal\"}}]": "action_journal",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"journal\"}}, {\"prev_action\": {\"action_name\": \"action_journal\"}, \"user\": {\"intent\": \"journal\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"emergency_help\"}}]": "action_emergency_help",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"emergency_help\"}}, {\"prev_action\": {\"action_name\": \"action_emergency_help\"}, \"user\": {\"intent\": \"emergency_help\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"track_mood\"}}]": "action_track_mood",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"track_mood\"}}, {\"prev_action\": {\"action_name\": \"action_track_mood\"}, \"user\": {\"intent\": \"track_mood\"}}]": "utter_thank_you_for_mood_tracking",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"track_mood\"}}, {\"prev_action\": {\"action_name\": \"action_track_mood\"}, \"user\": {\"intent\": \"track_mood\"}}, {\"prev_action\": {\"action_name\": \"utter_thank_you_for_mood_tracking\"}, \"user\": {\"intent\": \"track_mood\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"feel_anxious\"}}]": "action_anxiety_response",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"feel_anxious\"}}, {\"prev_action\": {\"action_name\": \"action_anxiety_response\"}, \"user\": {\"intent\": \"feel_anxious\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self_care_tips\"}}]": "action_self_care_tips",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self_care_tips\"}}, {\"prev_action\": {\"action_name\": \"action_self_care_tips\"}, \"user\": {\"intent\": \"self_care_tips\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}]": "action_guided_breathing",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_guided_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}]": "action_continue_breathing",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_guided_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_continue_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}]": "action_end_breathing",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_guided_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_continue_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}, {\"prev_action\": {\"action_name\": \"action_end_breathing\"}, \"user\": {\"intent\": \"mindfulness_exercise\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_gratitude\"}}]": "utter_gratitude_response",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_gratitude\"}}, {\"prev_action\": {\"action_name\": \"utter_gratitude_response\"}, \"user\": {\"intent\": \"express_gratitude\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart"
+    ]
+  }
+}

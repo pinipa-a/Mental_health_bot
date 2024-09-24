@@ -1,0 +1,81 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - lets go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: feel_anxious
+    examples: |
+      - I'm feeling anxious
+      - I feel stressed
+      - I'm overwhelmed
+      - I'm really worried
+      - I'm anxious about something
+
+  - intent: journal
+    examples: |
+      - I want to journal
+      - I need to write down my thoughts
+      - Can I record my feelings?
+      - I'd like to keep a journal entry
+
+  - intent: emergency_help
+    examples: |
+      - I need help right now
+      - I'm in an emergency
+      - Contact emergency services
+      - I feel like I'm in danger
+
+  - intent: express_gratitude
+    examples: |
+      - Thanks
+      - Thanks
+      - Thank you
+      - I appreciate it
+      - Thanks a lot
+      - I'm grateful
+
+  - intent: mindfulness_exercise
+    examples: |
+      - I want to do a breathing exercise
+      - Can we do a mindfulness exercise?
+      - I need a breathing exercise
+      - Help me with deep breathing
+
+  - intent: self_care_tips
+    examples: |
+      - Can you give me some self-care tips?
+      - I need self-care tips
+      - What are some self-care activities?
+      - How do I take care of myself?
+      - Give me advice on self-care
+      - Suggest self-care activities
+
+  - intent: track_mood
+    examples: |
+      - I want to track my mood
+      - I need to record my mood
+      - Help me track my mood
+      - Track my feelings
+
+  - intent: goodbye
+    examples: |
+      - goodbye
+      - see you later
+      - bye
+      - take care
+      - I'm done
+      - talk to you later

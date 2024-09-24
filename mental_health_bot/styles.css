@@ -1,0 +1,84 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #042630; /* Dark Teal */
+    max-height: 450px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: #3a6173; /* Teal */
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #86b9b0; /* Light Teal */
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #042630; /* Medium Teal */
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #515454; /* Darker Teal */
+}
+
+.message {
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-radius: 15px;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #006b79; /* Darker Teal */
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #a3dbdb; /* Light Gray */
+    color: #041421; /* Very Dark Teal */
+    align-self: flex-start;
+}

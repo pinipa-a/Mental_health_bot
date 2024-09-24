@@ -1,0 +1,85 @@
+version: "3.1"
+
+intents:
+  - greet
+  - feel_anxious
+  - journal
+  - emergency_help
+  - express_gratitude
+  - mindfulness_exercise
+  - self_care_tips
+  - track_mood
+  - goodbye
+
+actions:
+  - utter_greet
+  - action_anxiety_response
+  - action_journal
+  - action_emergency_help
+  - action_guided_breathing
+  - action_continue_breathing
+  - action_end_breathing
+  - action_self_care_tips
+  - action_track_mood
+  - utter_thank_you_for_mood_tracking
+  - utter_goodbye
+
+entities:
+  - emotion
+  - journal_entry
+  - mood_level
+  - mood_reason
+
+slots:
+  emotion:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: emotion
+  journal_entry:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: journal_entry
+  mood_level:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: mood_level
+  mood_reason:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: mood_reason
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  
+  utter_anxious:
+    - text: "I'm sorry to hear that you're feeling anxious. Would you like to talk about it or journal your thoughts?"
+
+  utter_journal:
+    - text: "Thanks for sharing your thoughts. Remember, journaling can be a helpful way to manage your feelings."
+
+  utter_emergency_help:
+    - text: "If you're feeling overwhelmed, please reach out to a mental health professional or contact emergency services."
+
+  utter_gratitude_response:
+    - text: "You're welcome! I'm always here to help."
+  
+  utter_mindfulness_exercise:
+    - text: "Let's start with some deep breathing. Breathe in... and breathe out. Continue for a few moments."
+
+  utter_self_care_tips:
+    - text: "Here are some self-care tips:\n\n1. Take regular breaks.\n2. Meditate for a few minutes each day.\n3. Spend time in nature.\n4. Get enough sleep.\n5. Stay hydrated and eat well."
+
+  utter_thank_you_for_mood_tracking:
+    - text: "Thank you for sharing! Your mood has been tracked."
+
+  utter_goodbye:
+    - text: "Goodbye! Take care and feel free to reach out whenever you need help."
